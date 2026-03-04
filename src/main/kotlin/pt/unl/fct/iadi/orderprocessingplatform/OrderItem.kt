@@ -1,4 +1,4 @@
-package pt.unl.fct.iadi.orderprocessingplatform.domain
+package pt.unl.fct.iadi.orderprocessingplatform
 
 data class OrderItem (
     val productId: String,
