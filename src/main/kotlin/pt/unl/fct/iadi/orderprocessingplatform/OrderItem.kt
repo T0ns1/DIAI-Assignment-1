@@ -1,3 +1,7 @@
-package pt.unl.fct.iadi.orderprocessingplatform
+package pt.unl.fct.iadi.orderprocessingplatform.domain
 
-typealias OrderItem = pt.unl.fct.iadi.orderprocessingplatform.domain.OrderItem
+data class OrderItem (
+    val productId: String,
+    val quantity: Int,
+    val price: Double
+)
