@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component
 import pt.unl.fct.iadi.orderprocessingplatform.payment.PaymentGateway
 import pt.unl.fct.iadi.orderprocessingplatform.pricing.PriceCalculator
 import pt.unl.fct.iadi.orderprocessingplatform.domain.Order
-import pt.unl.fct.iadi.orderprocessingplatform.domain.OrderItem
 import pt.unl.fct.iadi.orderprocessingplatform.domain.PaymentRequest
 import pt.unl.fct.iadi.orderprocessingplatform.domain.Receipt
 import java.time.Instant
@@ -76,9 +75,9 @@ class OrderProcessor (
             userId = "user123",
             createdAt = Instant.now(),
             items = listOf(
-                OrderItem(productId = "LAPTOP-001", quantity = 2, price = 999.99),
-                OrderItem(productId = "MOUSE-042", quantity = 3, price = 29.99),
-                OrderItem(productId = "KEYBOARD-123", quantity = 1, price = 149.99)
+                Order.OrderItem(productId = "LAPTOP-001", quantity = 2, price = 999.99),
+                Order.OrderItem(productId = "MOUSE-042", quantity = 3, price = 29.99),
+                Order.OrderItem(productId = "KEYBOARD-123", quantity = 1, price = 149.99)
             )
         )
 
